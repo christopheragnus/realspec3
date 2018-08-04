@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Realspec3</title>
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>RealSpec</title>
+  <%= csrf_meta_tags %>
+  <%= action_cable_meta_tag %>
+  
+  
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4BHW3txEdqfxzdTlPwaHsYRSZbfeIcd8&callback=initMap"
+                                         async defer></script>
+</head>
+
+<body>
 
   <body>
+    <%= render 'layouts/navigation' %>
     <%= yield %>
+    <%= render 'layouts/footer' %>
   </body>
+
 </html>
