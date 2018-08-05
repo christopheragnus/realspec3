@@ -5,4 +5,7 @@ class HomepageController < ApplicationController
   def map
   end
 
+  def result
+  end
+
 end
