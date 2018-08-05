@@ -1405,3 +1405,75 @@ Processing by HomepageController#result as HTML
 Completed 200 OK in 412ms (Views: 404.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/result" for 127.0.0.1 at 2018-08-05 13:26:41 +1000
+Processing by HomepageController#result as HTML
+  Rendering homepage/result.html.erb within layouts/application
+  Rendered homepage/result.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 95ms (Views: 90.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-05 13:27:07 +1000
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.html.erb within layouts/application
+  Rendered homepage/home.html.erb within layouts/application (10.6ms)
+  Rendered layouts/_navigation.html.erb (0.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 1613ms (Views: 1597.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-05 13:27:20 +1000
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.html.erb within layouts/application
+  Rendered homepage/home.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (4.3ms)
+Completed 200 OK in 451ms (Views: 437.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-05 13:29:04 +1000
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.html.erb within layouts/application
+  Rendered homepage/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navigation.html.erb (2406.5ms)
+Completed 500 Internal Server Error in 3275ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `home_path' for #<#<Class:0x007fda6fec9d10>:0x007fda728e9a78>):
+    1: <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    2:   <%= link_to 'RealSpeck', home_path, class: "navbar-brand" %>
+    3:   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    4:     <span class="navbar-toggler-icon"></span>
+    5:   </button>
+  
+app/views/layouts/_navigation.html.erb:2:in `_app_views_layouts__navigation_html_erb__2744819332568594917_70288123213200'
+app/views/layouts/application.html.erb:22:in `_app_views_layouts_application_html_erb___990342570434693707_70288079112020'
+Started GET "/" for 127.0.0.1 at 2018-08-05 13:29:09 +1000
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.html.erb within layouts/application
+  Rendered homepage/home.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navigation.html.erb (1744.8ms)
+Completed 500 Internal Server Error in 4769ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `home_path' for #<#<Class:0x007fda6fec9d10>:0x007fda751e28a8>):
+    1: <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    2:   <%= link_to 'RealSpeck', home_path, class: "navbar-brand" %>
+    3:   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    4:     <span class="navbar-toggler-icon"></span>
+    5:   </button>
+  
+app/views/layouts/_navigation.html.erb:2:in `_app_views_layouts__navigation_html_erb__2744819332568594917_70288113026840'
+app/views/layouts/application.html.erb:22:in `_app_views_layouts_application_html_erb___990342570434693707_70288114792680'
+Started GET "/" for 127.0.0.1 at 2018-08-05 13:29:30 +1000
+Processing by HomepageController#home as HTML
+  Rendering homepage/home.html.erb within layouts/application
+  Rendered homepage/home.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_navigation.html.erb (4.8ms)
+  Rendered layouts/_footer.html.erb (1.8ms)
+Completed 200 OK in 334ms (Views: 325.3ms | ActiveRecord: 0.0ms)
+
+
